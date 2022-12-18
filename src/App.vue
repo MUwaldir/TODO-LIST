@@ -119,6 +119,12 @@
   width: 100%;
   outline: none;
 }
+@media (max-width: 600px) {
+  #inputs-todo{
+    width: 100%;
+  }
+  
+}
 
 #box-input{
   font-weight: bold;
@@ -128,7 +134,7 @@
 }
 #box-todos{
   border: solid 1px #ccc;
-  width: 600px;
+  max-width: 600px;
   margin: 10px auto;
 }
 
@@ -142,10 +148,11 @@
   font-weight: bold;
 }
 
-.box-btn{
-  
+.box-btn{ 
   padding: 0 10px;
-  width: 15%;
+  width: 100px;
+  display: flex;
+  align-items: center;
   
 }
 
@@ -155,6 +162,7 @@
   font-weight: bold;
   border-radius: 5px;
   padding: 6px;
+  width: 100px;
 }
 #btn-eliminar{
   border: none;
